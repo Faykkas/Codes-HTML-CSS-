@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@500&display=swap');
+
+* {
+padding: 0;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(276deg, #BB1515 25.92%, #7B0F0F 83.47%); 
+    max-height: 120px;
+    padding: 20px 50px;
+    margin-bottom: 100px;
+}
+
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(276deg, #BB1515 25.92%, #7B0F0F 83.47%); 
+    max-height: 120px;
+    padding: 20px 50px;
+    
+}
+
+nav img {
+    height: 100px;
+}
+
+footer img {
+
+    Height: 100px;
+
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 25px 25px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li {
+    display:block;
+}
+
+ul li ul.dropdown {
+    width:190%;
+    background: linear-gradient(276deg, hsl(0, 80%, 41%) 25.92%, #7B0F0F 83.47%);
+    position: absolute;
+    z-index: 999;
+    display: none;
+ }   
+
+
+ul li a:hover {
+    background: linear-gradient(276deg, #BB1515 25.92%, #7B0F0F 83.47%);
+}
+
+ul li:hover ul.dropdown {
+    display:block;
+}
+
+.main-paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 25px; 
+}
+
+.titre {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sous-titre{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pokedex {
+    float: right;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.pokemon-info {
+    margin: 0 50px 100px 50px;
+}
+
+.pokemon-stats {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.pokemon-stats:nth-child(even) {
+    justify-content: end;
+}
+
+.pokemon-stats:nth-child(odd) {
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+.stats {
+    width: 910px;
+    height: 243px;
+    background-color: #3E4F57;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon-stats:nth-child(even) .stats {
+    border-top-left-radius: 50px;
+    padding: 40px 120px 40px 40px;
+}
+
+.pokemon-stats:nth-child(odd) .stats{
+    border-bottom-right-radius: 50px;
+    padding: 40px 120px 40px 40px;
+}
+
+.pokemon-img{
+    height: 380px;
+    margin: 0 50px;
+}
+
+.caracteristiques {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+}
+
+.faiblesse {
+    flex-grow: 1;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+.type img {
+    margin-bottom: 10px;
+}
+
+.caracteristiques div img, .faiblesse img {
+    padding-left: 20px;
+    height: 35px;
+    width: auto;
+}
+
+.taille p:not(:first-child), .poids p:not(:first-child) {
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.caracteristiques div p:first-child, .faiblesse p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sexe_repartition div {
+    margin-bottom: 10px;
+}
+
+.sexe {
+    display: flex;
+    align-items: center;
+}
+
+.sexe img {
+    margin-right: 15px;
+}
+
+.mirror {
+    transform: scaleX(-1);
+}
